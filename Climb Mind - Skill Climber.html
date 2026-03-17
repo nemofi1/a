@@ -17,10 +17,12 @@
       <div>精度: <span id="accuracyDisplay">-</span></div>
       <div>安定性: <span id="stabilityDisplay">-</span></div>
       <div>リスク: <span id="riskDisplay">-</span></div>
+      <div>区間: <span id="segmentDisplay">-</span></div>
+      <div>ムード: <span id="moodDisplay">-</span></div>
       <button id="regenButton">同シードでリスタート</button>
     </div>
     <div id="debugPanel">
-      <div>DEBUG</div>
+      <div>DEBUG / TUNE</div>
       <label>重力: <input id="gravityInput" type="number" step="0.001" /></label>
       <label>摩擦: <input id="frictionInput" type="number" step="0.01" /></label>
       <label>空中制御: <input id="airControlInput" type="number" step="0.01" /></label>
@@ -29,6 +31,9 @@
     </div>
     <div id="narrationBox"></div>
     <div id="nearMissBox"></div>
+    <div id="progressBarContainer">
+      <div id="progressBarFill"></div>
+    </div>
   </div>
 
   <canvas id="gameCanvas"></canvas>
